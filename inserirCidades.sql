@@ -7,3 +7,9 @@ INSERT INTO cidades (nome, estado_id, area)
         (SELECT id FROM estados WHERE sigla = 'PE'),
         920.6
     );
+
+INSERT INTO cidades (nome, estado_id, area)
+VALUES
+    ('Fortaleza',
+    (SELECT id FROM estados WHERE sigla = 'CE'),
+    1000)
